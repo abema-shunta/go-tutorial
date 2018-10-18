@@ -1,0 +1,10 @@
+[[constraint]]
+  name = "github.com/gin-going/gin"
+  version = "1.2.0"
+  
+
+[prune] 
+  go-tests = true
+  unused-packages = true 
+  
+  
