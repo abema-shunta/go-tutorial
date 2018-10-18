@@ -3,7 +3,7 @@ version: '3'
 volumes: 
   vendor: 
   
-service: 
+services: 
   api: 
     build: 
       context: .
