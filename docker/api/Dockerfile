@@ -4,6 +4,8 @@ COPY src/api /go/src/api
 
 WORKDIR /go/src/api/
 
+ENV GIT_TERMINAL_PROMPT=1
+
 RUN apk update \
   && apk add --no-cache git \ 
   && go get -u github.com/codegangsta/gin \ 
