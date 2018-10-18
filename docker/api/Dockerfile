@@ -6,6 +6,8 @@ WORKDIR /go/src/api/
 
 ENV GIT_TERMINAL_PROMPT=1
 
+RUN echo "[url \"git@github.com:\"]\n\tinsteadOf = https://github.com/" >> /root/.gitconfig
+
 RUN apk update \
   && apk add --no-cache git \ 
   && go get -u github.com/codegangsta/gin \ 
