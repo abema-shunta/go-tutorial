@@ -7,7 +7,7 @@ WORKDIR /go/src/api/
 ENV GIT_TERMINAL_PROMPT=1
 
 RUN apk update \
-  && apk add --no-cache git \ 
+  && apk add --no-cache git
 
 RUN git config --global url.'git@github.com'.insteadof https://github.com
 
